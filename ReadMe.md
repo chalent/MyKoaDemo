@@ -23,9 +23,21 @@ npm i koa-body
 在 controller 中调用并使用结果
 
 
+### 数据库操作
+sequelize ORM 数据库工具
 
+ORM：对象关系映射
+· 数据表映射（对应）一个对象
+· 数据表中的数行（记录）对应一个对象
+· 数据表字段对应对象的属性
+· 数据表的操作对应对象的方法
 
-
-
-
-
+Sequelize 中间件 
+  数据库连接工具
+  npm 安装sequelize和mysql2（若使用的是mysql数据库）
+新建db目录
+  连接数据库等操作 -- sequelize连接mysql
+新建model目录
+  编写数据模型 -- 参考sequelize的数据模型定义方式
+  sequelize 数据模型，根据写定的数据模型，执行生成对应数据表
+  
