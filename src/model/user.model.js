@@ -4,7 +4,7 @@ const { DataTypes } = require("sequelize")
 const seq = require("../db/seq")
 
 // 创建模型(Model zd_user -> zd_users)
-const User = seq.define("zd_User", {
+const User = seq.define("zd_Users", {
     // 模型字段，与表的字段一致
     // id 会被sequelize自动创建和管理
     user_name: {
@@ -28,5 +28,6 @@ const User = seq.define("zd_User", {
 
 // 强制同步：force:true表示当数据库有这个表，会强制删除并创建新的表
 User.sync({ froce: true }) 
+console.log("定义表完成");
 
 module.exports = User;
