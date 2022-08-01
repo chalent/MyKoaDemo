@@ -7,7 +7,7 @@ const seq = require("../db/seq")
 const User = seq.define("zd_Users", {
     // 模型字段，与表的字段一致
     // id 会被sequelize自动创建和管理
-    user_name: {
+    userName: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
@@ -17,7 +17,7 @@ const User = seq.define("zd_Users", {
         type: DataTypes.CHAR(64),
         allowNull: false,
     },
-    is_admin: {
+    isAdmin: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
         defaultValue: 0
