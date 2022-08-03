@@ -40,4 +40,7 @@ Sequelize 中间件
 新建model目录
   编写数据模型 -- 参考sequelize的数据模型定义方式
   sequelize 数据模型，根据写定的数据模型，执行生成对应数据表
-  
+新建middleware
+  拆分中间件  
+新建consitant
+  存放一些静态数据  
